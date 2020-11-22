@@ -1,16 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.9.3
--- https://www.phpmyadmin.net/
---
--- Host: localhost:3306
--- Generation Time: Nov 22, 2020 at 05:00 PM
--- Server version: 5.7.26
--- PHP Version: 7.4.1
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
---
 -- Database: formationFormateur
 --
 
@@ -31,8 +18,8 @@ CREATE TABLE PARTIEA__CADEAUX (
 --
 
 INSERT INTO PARTIEA__CADEAUX (idCadeau, descriptionCadeau, prixCadeau) VALUES
-(1, PS5, 499),
-(2, trottinette, 20);
+(1, 'PS5', 499),
+(2, 'trottinette', 20);
 
 -- --------------------------------------------------------
 
@@ -53,7 +40,7 @@ CREATE TABLE PARTIEA__ENFANTS (
 --
 
 INSERT INTO PARTIEA__ENFANTS (idEnfant, nomEnfant, prenomEnfant, ageEnfant, villeEnfant) VALUES
-(1, Dupont, Marcel, 9, Poitiers);
+(1, 'Dupont', 'Marcel', 9, 'Poitiers');
 
 -- --------------------------------------------------------
 
@@ -72,7 +59,7 @@ CREATE TABLE PARTIEB__CADEAUX (
 --
 
 INSERT INTO PARTIEB__CADEAUX (idCadeau, descriptionCadeau, prixCadeau) VALUES
-(1, PS5, 500);
+(1, 'PS5', 500);
 
 -- --------------------------------------------------------
 
@@ -93,8 +80,8 @@ CREATE TABLE PARTIEB__ENFANTS (
 --
 
 INSERT INTO PARTIEB__ENFANTS (idEnfant, nomEnfant, prenomEnfant, ageEnfant, villeEnfant) VALUES
-(1, JEAN, Jacques, 12, Paris),
-(2, V, V, 12, V);
+(1, 'JEAN', 'Jacques', 12, 'Paris'),
+
 
 --
 -- Indexes for dumped tables
