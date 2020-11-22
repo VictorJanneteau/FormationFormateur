@@ -11,13 +11,13 @@
             $ancienPrixCadeau=$_POST['ancienPrixCadeau'];
             $nouveauPrixCadeau=$_POST['nouveauPrixCadeau'];
 
-            $ajoutEnfant = $connect->prepare('INSERT INTO ENFANTS (prenomEnfant,nomEnfant,ageEnfant,villeEnfant) 
-            VALUES(:nomEnfant, :prenomEnfant, :ageEnfant, :villeEnfant)');
-            $ajoutEnfant->bindValue(":nomEnfant",$nomEnfant, PDO::PARAM_STR);
-            $ajoutEnfant->bindValue(":prenomEnfant",$prenomEnfant, PDO::PARAM_STR);
-            $ajoutEnfant->bindValue(":ageEnfant",$ageEnfant, PDO::PARAM_STR);
-            $ajoutEnfant->bindValue(":villeEnfant",$villeEnfant, PDO::PARAM_STR);
-            $ajoutEnfant->execute();
+            $modifierCadeau = $bdd->prepare('UPDATE PARTIEB__CADEAUX 
+            SET prixCadeau =:nouveauPrixCadeau 
+            WHERE prixCadeau=:ancienPrixCadeau AND descriptionCadeau=:descriptionCadeau');
+            $modifierCadeau->bindValue(":nouveauPrixCadeau",$nouveauPrixCadeau, PDO::PARAM_STR);
+            $modifierCadeau->bindValue(":ancienPrixCadeau",$ancienPrixCadeau, PDO::PARAM_STR);
+            $modifierCadeau->bindValue(":descriptionCadeau",$descriptionCadeau, PDO::PARAM_STR);
+            $modifierCadeau->execute();
         }
 
     ?>
