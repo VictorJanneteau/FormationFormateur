@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Accueil</title>
+        <meta charset="UTF8"/>
         <link rel="stylesheet" href="style.css">
     </head>
     
@@ -10,9 +11,13 @@
         <a href="listeEnfants.php"><button>Enfants</button></a>
 
 
-    <!-- <form action="listeCadeaux.php">
-        <input type="submit" value="Cadeaux" />
-    </form> -->
+    
+    <!--EXERCICE 3-->
+    <form method="POST" action="listeCadeauxRecherche.php">
+        <label>Descrption du cadeau recherché :</label>
+        <input type="text" name="nomCadeauRecherche" required="required">
+        <input type="submit" name="boutonCadeauRecherche" value="Rechercher"/>
+    </form>
 </body>
 </html>
 
