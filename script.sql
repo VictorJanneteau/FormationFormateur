@@ -90,8 +90,7 @@ INSERT INTO PARTIEB__ENFANTS (idEnfant, nomEnfant, prenomEnfant, ageEnfant, vill
 --
 -- Indexes for table PARTIEA__CADEAUX
 --
-ALTER TABLE PARTIEA__CADEAUX
-  ADD PRIMARY KEY (idCadeau);
+ALTER TABLE PARTIEA__CADEAUX ADD PRIMARY KEY (idCadeau);
 
 --
 -- Indexes for table PARTIEA__ENFANTS

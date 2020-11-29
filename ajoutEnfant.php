@@ -1,4 +1,4 @@
-
+<!-- PARTIE B : REQUETES INSERT-->
 <!DOCTYPE HTML>
 <html>
     <body>

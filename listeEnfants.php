@@ -1,12 +1,16 @@
+<!-- PARTIE A : REQUETES SELECT-->
+<!-- EXERCICE 2 -->
 <!DOCTYPE html>
 <html>
     <body>
         <?php
+            //inclusion du fichier de connexion à la BDD
             include("bdd.php");
-           
+            //récuperation de toutes les informations sur les enfants enregistrés dans la table PARTIEA__ENFANTS
             $listeEnfants = $bdd->prepare("SELECT * FROM PARTIEA__ENFANTS"); 
+            //execution de la requete
             $listeEnfants->execute();
-            
+            //affichage des données
             While($donnees = $listeEnfants->fetch())
             {
                 echo "Nom enfant : ".$donnees['nomEnfant'];

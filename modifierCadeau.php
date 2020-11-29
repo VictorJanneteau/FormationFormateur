@@ -1,4 +1,4 @@
-
+<!-- PARTIE C : REQUETES UPDATE-->
 <!DOCTYPE HTML>
 <html>
     <body>
