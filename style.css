@@ -1,3 +1,15 @@
 body{
-    background-color: darkgreen;
+    background-color: darkolivegreen;
 }
+
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    
+    color: #fff;
+}
+

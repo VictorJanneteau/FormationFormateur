@@ -2,7 +2,9 @@
 <!-- EXERCICE 2 -->
 <!DOCTYPE html>
 <html>
-    <body>
+
+<body>
+        
         <?php
             //inclusion du fichier de connexion à la BDD
             include("bdd.php");
@@ -22,9 +24,12 @@
                 echo "Ville de l'enfant : ".$donnees['villeEnfant'];
                 echo "<br>";
                 echo "<br>";
+                
+                
             }
             
             $listeEnfants->closeCursor();
         ?>
+        
     </body>
 </html>

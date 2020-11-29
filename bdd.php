@@ -2,7 +2,7 @@
 
 try {
     $bdd = new PDO('mysql:host=localhost;dbname=formationFormateur;charset=utf8', 'root', 'root'); 
-    echo("connexion reussie");
+    //echo("connexion reussie");
 }
 
 catch (Exception $e){
