@@ -8,15 +8,18 @@
     </head>
     
     <body>
-        <form method="POST" action="modifierCadeau.php">
-            <input type="text" name="descriptionCadeau" placeholder="Description Cadeau" required="required">
-            <br>
-            <input type="text" name="ancienPrixCadeau" placeholder=" Ancien prix" required="required">
-            <br>
-            <input type="text" name="nouveauPrixCadeau" placeholder="Nouveau prix" required="required">
-            <br>
-            <input type="submit" name="boutonCadeauModifier" value="Modifier"/>
-        </form>
+        <div class="center-div">
+            <h1>Modifier le prix d'un cadeau</h1>
+            <form method="POST" action="modifierCadeau.php">
+                <input type="text" name="descriptionCadeau" placeholder="Description Cadeau" required="required" class="inputText">
+                <br>
+                <input type="text" name="ancienPrixCadeau" placeholder=" Ancien prix" required="required" class="inputText">
+                <br>
+                <input type="text" name="nouveauPrixCadeau" placeholder="Nouveau prix" required="required" class="inputText">
+                <br>
+                <input type="submit" name="boutonCadeauModifier" value="Modifier" id="buttonSmall"/>
+            </form>
+        </div>
     </body>
 </html>
 

@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+<!-- PARTIE E - EXERCICE 2-->
+<?php include("bdd.php");?>
+<?php session_start();?>
+
 
 <html>
     <head>
@@ -9,50 +13,66 @@
     </head>
     
     <body>
-        <a href="listeCadeaux.php"><button>Liste des cadeaux</button></a>
-        <br> 
+    <div  class="right-div">
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="2">INFORMATIONS UTILISATEUR</th>
+                    <th></th>
+                    <th>
+                        <form method="POST" action="connexion.php">
+                            <!-- PARTIE E - EXERCICE 3-->
+                            <input type="submit" name="boutonDeconnexion" id="buttonSmall" value="Déconnexion"/>
+                        </form>
+                    </th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                <tr> 
+                    <td>NOM</td>
+                    <td>EQUIPE</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr> 
+                    <td><?php echo $_SESSION['nomLutin']; ?></td>
+                    <td><?php echo $_SESSION['equipeLutin']; ?></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <div class="center-div">
+        <h1>Bienvenue !</h1>
+
+        <br><br> 
+        <a href="listeCadeaux.php"><button class="button">Liste des cadeaux</button></a>
+
+
+        <br><br><br> 
         <!-- PARTIE A - EXERCICE 2  -->
-        <a href="listeEnfants.php"><button>Liste des enfants</button></a>  
-        <br><br>
-        <!-- PARTIE A - EXERCICE 3-->
+        <a href="listeEnfants.php"><button class="button">Liste des enfants</button></a>  
+
+
+        <!-- PARTIE A - EXERCICE 3 -->
         <form method="POST" action="listeCadeauxRecherche.php">
-            <label>Descrption du cadeau recherché :</label>
+            <br><br>
+            <label><strong>Description du cadeau recherché :</strong></label>
             <br>
-            <input type="text" name="nomCadeauRecherche" required="required">
-            <input type="submit" name="boutonCadeauRecherche" value="Rechercher"/>
+            <input type="text" placeholder="ex : PS5" name="nomCadeauRecherche" required="required" class="inputText">
+            <input type="image" name="submit" src="https://cdn.icon-icons.com/icons2/1514/PNG/512/magnifier_105027.png" border="0" alt="Submit" style="width: 15px;" />
+            <!-- <input type="submit" name="boutonCadeauRecherche" value="Rechercher"/>--> 
         </form>
-        <br><br>
-
+    </div>
     
     
-    
-    <!-- PARTIE E - EXERCICE 2-->
-    <?php include("bdd.php");?>
-    <?php session_start();?>
 
 
-    <table>
-        <thead>
-        <tr><th colspan="2">INFORMATION UTILISATEUR</th></tr>
-        </thead>
-        
-        <tbody>
-        <tr> 
-            <td>NOM</td>
-            <td>EQUIPE</td>
-        </tr>
-        <tr> 
-            <td><?php echo $_SESSION['nomLutin']; ?></td>
-            <td><?php echo $_SESSION['equipeLutin']; ?></td>
-        </tr>
-        </tbody>
-    </table>
 
-    <!-- PARTIE E - EXERCICE 3-->
 
-    <form method="POST" action="connexion.php">
-            <input type="submit" name="boutonDeconnexion" value="Deconnexion"/>
-    </form>
 
 
 

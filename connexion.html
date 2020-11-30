@@ -2,20 +2,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CONNEXION</title>
+        <title>Connexion</title>
         <meta charset="UTF8"/>
         <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
-        <form method="POST" action="connexion.php">
-            <p>Formulaire de connexion</p>
-            <input type="text" name="nomLutinConnect" required="required" placeholder="Nom">
-            <br>
-            <input type="password" name="mdpLutinConnect" required="required" placeholder="mot de passe">
-            <br><br>
-            <input type="submit" name="boutonConnexion" value="Connexion"/>
-        </form>
+        <div class="center-div">
+            <h1>Connexion</h1>
+            <form method="POST" action="connexion.php">
+                <input type="text" name="nomLutinConnect" required="required" placeholder="Nom" class="inputText">
+                <br>
+                <input type="password" name="mdpLutinConnect" required="required" placeholder="mot de passe" class="inputText">
+                <br><br>
+                <input type="submit" name="boutonConnexion" value="Connexion" id="buttonSmall"/>
+            </form>
+        </div>
     </body>
 </html>
 

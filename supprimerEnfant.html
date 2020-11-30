@@ -9,15 +9,18 @@
     </head>
     
     <body>
-        <form method="POST" action="supprimerEnfant.php">
-            <input type="text" name="prenomEnfantSupp" placeholder="Prénom de l'enfant" required="required">
-            <br>
-            <input type="text" name="nomEnfantSupp" placeholder="Nom de l'enfant" required="required">
-            <br>
-            <input type="text" name="ageEnfantSupp" placeholder="Age de l'enfant" required="required">
-            <br>
-            <input type="submit" name="boutonEnfantSupprimer" value="Supprimer"/>
-        </form>
+        <div class="center-div">
+            <h1>Supprimer un enfant</h1>
+            <form method="POST" action="supprimerEnfant.php">
+                <input type="text" name="prenomEnfantSupp" placeholder="Prénom de l'enfant" required="required" class="inputText">
+                <br>
+                <input type="text" name="nomEnfantSupp" placeholder="Nom de l'enfant" required="required" class="inputText">
+                <br>
+                <input type="text" name="ageEnfantSupp" placeholder="Age de l'enfant" required="required" class="inputText">
+                <br>
+                <input type="submit" name="boutonEnfantSupprimer" value="Supprimer" id="buttonSmall"/>
+            </form>
+        </div>
     </body>
 </html>
 
