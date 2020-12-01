@@ -63,12 +63,7 @@
             <label><strong>Description du cadeau recherché :</strong></label>
             <br>
             <input type="text" placeholder="ex : PS5" name="nomCadeauRecherche" required="required" class="inputText">
-<<<<<<< HEAD
-            <input type="image" name="boutonCadeauRecherche" src="https://cdn.icon-icons.com/icons2/1514/PNG/512/magnifier_105027.png" border="0" alt="Submit" style="width: 15px;" />
-=======
-          
-
->>>>>>> 0827d0ba966b42c8e2f040711b08299c9c982278
+            <input type="submit" name="boutonCadeauRecherche" id="buttonSmall" value="Rechercher"/>
             <!-- <input type="submit" name="boutonCadeauRecherche" value="Rechercher"/>--> 
         </form>
     </div>
