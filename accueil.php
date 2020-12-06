@@ -63,6 +63,7 @@
             <label><strong>Description du cadeau recherché :</strong></label>
             <br>
             <input type="text" placeholder="ex : PS5" name="nomCadeauRecherche" required="required" class="inputText">
+            <br>
             <input type="submit" name="boutonCadeauRecherche" id="buttonSmall" value="Rechercher"/>
             <!-- <input type="submit" name="boutonCadeauRecherche" value="Rechercher"/>--> 
         </form>

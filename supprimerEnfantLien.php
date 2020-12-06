@@ -9,7 +9,7 @@
         $supprimerEnfant->bindValue(':id', $_GET['idEnfant'], PDO::PARAM_STR);
         $supprimerEnfant->execute();
 
-        if(isset($_POST['boutonEnfantSupprimer']))
+        if(isset($_POST['boutonEnfantSupp']))
         {
             $prenomEnfantSupp=$_POST['prenomEnfantSupp'];
             $nomEnfantSupp=$_POST['nomEnfantSupp'];

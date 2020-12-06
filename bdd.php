@@ -20,7 +20,7 @@ $USER = 'root';
 $PASSWORD = 'root';
 
 try { 
-    $bdd = new PDO($DSN, $USER,$PASSWORD); 
+    $bdd = new PDO($DSN,$USER,$PASSWORD); 
     echo("connexion reussie");
 }
 catch (Exception $e){
