@@ -11,7 +11,7 @@
             $nomEnfantSupp=$_POST['nomEnfantSupp'];
             $ageEnfantSupp=$_POST['ageEnfantSupp'];
 
-            $supprimerEfant= $bdd->prepare('DELETE FROM PARTIEB__ENFANTS WHERE nomEnfant=:nomEnfantSupp AND prenomEnfant=:prenomEnfantSupp AND ageEnfant=:ageEnfantSupp');
+            $supprimerEfant= $bdd->prepare('DELETE FROM PARTIED__ENFANTS WHERE nomEnfant=:nomEnfantSupp AND prenomEnfant=:prenomEnfantSupp AND ageEnfant=:ageEnfantSupp');
             $supprimerEfant->bindValue(":nomEnfantSupp",$nomEnfantSupp, PDO::PARAM_STR);
             $supprimerEfant->bindValue(":prenomEnfantSupp",$prenomEnfantSupp, PDO::PARAM_STR);
             $supprimerEfant->bindValue(":ageEnfantSupp",$ageEnfantSupp, PDO::PARAM_STR);

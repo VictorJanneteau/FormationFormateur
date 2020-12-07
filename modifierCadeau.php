@@ -11,7 +11,7 @@
             $ancienPrixCadeau=$_POST['ancienPrixCadeau'];
             $nouveauPrixCadeau=$_POST['nouveauPrixCadeau'];
 
-            $modifierCadeau = $bdd->prepare('UPDATE PARTIEB__CADEAUX 
+            $modifierCadeau = $bdd->prepare('UPDATE PARTIEC__CADEAUX 
             SET prixCadeau =:nouveauPrixCadeau 
             WHERE prixCadeau=:ancienPrixCadeau AND descriptionCadeau=:descriptionCadeau');
             $modifierCadeau->bindValue(":nouveauPrixCadeau",$nouveauPrixCadeau, PDO::PARAM_STR);

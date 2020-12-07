@@ -14,7 +14,7 @@
                 <select name="descriptionCadeau" type="text">
                 <?php
                     include("bdd.php");
-                    $listeCadeaux = $bdd->prepare("SELECT * FROM PARTIEB__CADEAUX");
+                    $listeCadeaux = $bdd->prepare("SELECT * FROM PARTIEC__CADEAUX");
                     $listeCadeaux->execute();
                     while ($donnees = $listeCadeaux->fetch())
                     {
